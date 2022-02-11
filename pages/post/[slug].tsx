@@ -19,11 +19,13 @@ interface Props {
 
 function Post({ post }: Props) {
     const [submitted, setSubmitted] = useState(false)
+
     const {
         register,
         handleSubmit,
         formState: { errors },
     } = useForm<FormInput>()
+
     const onSubmit: SubmitHandler<FormInput> = async (data) => {
         await fetch('/api/createComment', {
             method: 'POST',
@@ -78,29 +80,38 @@ function Post({ post }: Props) {
                         projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!}
                         content={post.body}
                         serializers={{
-                            h1: (props: any) => {
-                                ;<h3
+                            h1: (props: any) => (
+                                <h3
                                     className="my-5 text-2xl font-bold"
                                     {...props}
                                 />
-                            },
-                            h2: (props: any) => {
-                                ;<h3
+                            ),
+                            h2: (props: any) => (
+                                <h4
                                     className="my-5 text-xl font-bold"
                                     {...props}
                                 />
-                            },
-                            li: ({ children }: any) => {
-                                ;<li className="ml-4 list-disc">{children}</li>
-                            },
-                            link: ({ href, children }: any) => {
-                                ;<a
+                            ),
+                            h3: (props: any) => (
+                                <h5
+                                    className="text-l my-5 font-bold"
+                                    {...props}
+                                />
+                            ),
+                            h4: (props: any) => (
+                                <h6 className="text-l my-5" {...props} />
+                            ),
+                            li: ({ children }: any) => (
+                                <li className="ml-4 list-disc">{children}</li>
+                            ),
+                            link: ({ href, children }: any) => (
+                                <a
                                     href={href}
                                     className="text-blue-500 hover:underline"
                                 >
                                     {children}
                                 </a>
-                            },
+                            ),
                         }}
                     />
                 </div>
