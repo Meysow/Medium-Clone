@@ -82,24 +82,27 @@ function Post({ post }: Props) {
                         serializers={{
                             h1: (props: any) => (
                                 <h3
-                                    className="my-5 text-2xl font-bold"
+                                    className="my-5 text-3xl font-bold"
                                     {...props}
                                 />
                             ),
                             h2: (props: any) => (
                                 <h4
-                                    className="my-5 text-xl font-bold"
+                                    className="my-5 text-2xl font-bold"
                                     {...props}
                                 />
                             ),
                             h3: (props: any) => (
                                 <h5
-                                    className="text-l my-5 font-bold"
+                                    className="my-5 text-xl font-bold"
                                     {...props}
                                 />
                             ),
                             h4: (props: any) => (
-                                <h6 className="text-l my-5" {...props} />
+                                <h6
+                                    className="my-5 text-xl font-bold"
+                                    {...props}
+                                />
                             ),
                             li: ({ children }: any) => (
                                 <li className="ml-4 list-disc">{children}</li>
