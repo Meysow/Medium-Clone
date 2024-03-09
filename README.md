@@ -38,16 +38,17 @@ npm install npm@latest -g
 ```
 Installation
 
-    Clone the repository
+Clone the repository
 
 ```bash
 git clone https://github.com/Meysow/Medium-Clone.git
 ```
-    Install NPM packages
+Install NPM packages
 
 ```bash
 npm install
 ```
+
 Running the Application
 
     npm run dev starts the development server.
