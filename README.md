@@ -1,27 +1,55 @@
-# Next.js + Tailwind CSS Example
+# Medium Clone
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+![Medium Clone](https://tdportfolio-self.vercel.app/assets/projects/Medium.png)
 
-## Preview
+This project is a clone of Medium, crafted with the latest web technologies including Next.js, TypeScript, Tailwind CSS, and Sanity. It showcases a powerful blend of development tools to create an intuitive and responsive blogging platform. With Sanity as the content management backend, users can effortlessly create, manage, and display blog posts, making it a perfect solution for writers seeking a seamless experience across all devices.
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+## Features
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+- **Next.js and TypeScript**: Utilizing modern web development practices for fast, scalable applications.
+- **Sanity CMS**: A fully customizable backend for managing blog content with ease.
+- **Tailwind CSS**: For responsive and aesthetically pleasing designs across all device types.
+- **Intuitive Content Management**: Simplifying the process of creating and managing blog posts.
 
-## Deploy your own
+## Live Demo
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+Explore the Medium Clone live: [Medium Clone Demo](http://medium-clone-kappa.vercel.app)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+## Technologies
 
-## How to use
+The Medium Clone is built with:
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+- Next.js
+- TypeScript
+- Sanity
+- Tailwind CSS
+- React
+
+## Getting Started
+
+Follow these steps to get a local copy up and running.
+
+### Prerequisites
+
+Ensure npm is installed:
 
 ```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+npm install npm@latest -g
 ```
+Installation
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+    Clone the repository
+
+```bash
+git clone https://github.com/Meysow/Medium-Clone.git
+```
+    Install NPM packages
+
+```bash
+npm install
+```
+Running the Application
+
+    npm run dev starts the development server.
+    npm run build builds the application for production.
+    npm run start starts the production server.
